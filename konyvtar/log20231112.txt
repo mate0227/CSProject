@@ -1,0 +1,59 @@
+2023-11-12 11:40:44.127 +01:00 [INF] Executed DbCommand (264ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [KonyvtarCore];
+2023-11-12 11:40:44.236 +01:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [KonyvtarCore] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-11-12 11:40:44.252 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-11-12 11:40:44.307 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-11-12 11:40:44.309 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-11-12 11:40:44.320 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-11-12 11:40:44.324 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-11-12 11:40:44.335 +01:00 [INF] Applying migration '20231112104028_initdatabase'.
+2023-11-12 11:40:44.364 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Books] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(max) NOT NULL,
+    [Author] nvarchar(max) NOT NULL,
+    [Publisher] nvarchar(max) NOT NULL,
+    [PublicationYear] int NOT NULL,
+    CONSTRAINT [PK_Books] PRIMARY KEY ([Id])
+);
+2023-11-12 11:40:44.366 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Readers] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [BirthDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Readers] PRIMARY KEY ([Id])
+);
+2023-11-12 11:40:44.369 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Loans] (
+    [Id] int NOT NULL IDENTITY,
+    [ReaderId] int NOT NULL,
+    [BookId] int NOT NULL,
+    [BorrowDate] datetime2 NOT NULL,
+    [ReturnDeadline] datetime2 NOT NULL,
+    CONSTRAINT [PK_Loans] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Loans_Books_BookId] FOREIGN KEY ([BookId]) REFERENCES [Books] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Loans_Readers_ReaderId] FOREIGN KEY ([ReaderId]) REFERENCES [Readers] ([Id]) ON DELETE CASCADE
+);
+2023-11-12 11:40:44.369 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Loans_BookId] ON [Loans] ([BookId]);
+2023-11-12 11:40:44.370 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Loans_ReaderId] ON [Loans] ([ReaderId]);
+2023-11-12 11:40:44.372 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20231112104028_initdatabase', N'7.0.13');
