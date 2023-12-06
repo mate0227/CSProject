@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "konyvtar", "konyvtar.csproj", "{6D0E0777-82AF-46AF-9E78-B6148500AB99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "konyvtar_ui", "..\konyvtar_ui\konyvtar_ui.csproj", "{0F4D0AE3-2F7D-437F-826B-C11CB240591F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "konyvtar_ui", "..\konyvtar_ui\konyvtar_ui.csproj", "{0F4D0AE3-2F7D-437F-826B-C11CB240591F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
