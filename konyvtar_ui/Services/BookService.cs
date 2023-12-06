@@ -18,6 +18,7 @@ namespace konyvtar_ui.Services
             _httpClient.GetFromJsonAsync<Book>($"Books/{id}");
         public Task AddBookAsync(Book book) =>
             _httpClient.PostAsJsonAsync("Books", book);
+
         public Task UpdateBookAsync(int id, Book book) =>
             _httpClient.PutAsJsonAsync($"Books/{id}", book);
         public Task DeleteBookAsync(int id) =>

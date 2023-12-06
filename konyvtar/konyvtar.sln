@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "konyvtar", "konyvtar.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "konyvtar_ui", "..\konyvtar_ui\konyvtar_ui.csproj", "{0F4D0AE3-2F7D-437F-826B-C11CB240591F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "konyvtar.Contracts", "..\konyvtar.Contracts\konyvtar.Contracts.csproj", "{DA6D6EBB-D3AE-4DFE-985F-44A183867D51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "konyvtar.Contracts", "..\konyvtar.Contracts\konyvtar.Contracts.csproj", "{DA6D6EBB-D3AE-4DFE-985F-44A183867D51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,9 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 
 
+
 namespace konyvtar.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class BooksController : ControllerBase
     {
@@ -36,9 +37,8 @@ namespace konyvtar.Controllers
         [HttpPost]
         public async Task<IActionResult> AddBook([FromBody] Book book)
         {
-            var existingPerson = await _bookService.Get(book.Id);
-
-            if (existingPerson is not null)
+            var existingBook = await _bookService.Get(book.Id);
+            if (existingBook is not null)
             {
                 return Conflict();
             }
