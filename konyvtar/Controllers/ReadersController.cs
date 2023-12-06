@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace konyvtar.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ReadersController : ControllerBase
     {
@@ -34,10 +34,17 @@ namespace konyvtar.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Reader>> AddReader(Reader reader)
+        public async Task<IActionResult> AddReader([FromBody] Reader reader)
         {
+            var existingReader = await _readerService.Get(reader.Id);
+            if (existingReader is not null)
+            {
+                return Conflict();
+            }
+
             await _readerService.Add(reader);
-            return CreatedAtAction(nameof(GetReader), new { id = reader.Id }, reader);
+
+            return Ok();
         }
 
         [HttpPut("{id}")]

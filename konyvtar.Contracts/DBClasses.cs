@@ -36,7 +36,7 @@ namespace konyvtar.Contracts
         public string Address { get; set; }
 
         [Required(ErrorMessage = "A születési dátum megadása kötelező.")]
-        [Range(typeof(DateTime), "1900-01-01", "2022-12-31", ErrorMessage = "Az érték nem lehet kisebb mint 1900.")]
+        [Range(typeof(DateTime), "1900-01-01", "2022-12-31", ErrorMessage = "A születési év nem lehet kisebb mint 1900 és nagyobb mint 2022.")]
         public DateTime BirthDate { get; set; }
 
 

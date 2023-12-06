@@ -1,0 +1,55 @@
+﻿@page "/readerdetails/{id:int}"
+@inject IReaderService ReaderService
+@inject NavigationManager NavigationManager
+
+@if (Reader is not null)
+{
+    <h3>@Reader.Name's Details</h3>
+
+    <ReaderForm Reader="Reader" ButtonTitle="Update Reader" OnValidSubmit="UpdateReader" />
+
+    <button class="btn btn-danger form-control mt-3" @onclick="DeleteReader">Delete Reader</button>
+}
+else if (!_isFound)
+{
+    <p>Reader with id '@Id' is not found!</p>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+
+@code {
+
+    private bool _isFound = true;
+
+    [Parameter]
+    public int Id { get; set; }
+
+    private Reader? Reader { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Reader = await ReaderService.GetReaderAsync(Id);
+        }
+        catch
+        {
+            _isFound = false;
+        }
+    }
+
+    private async Task UpdateReader()
+    {
+        await ReaderService.UpdateReaderAsync(Id, Reader);
+        NavigationManager.NavigateTo("readerlist");
+    }
+
+    private async Task DeleteReader()
+    {
+        await ReaderService.DeleteReaderAsync(Id);
+        NavigationManager.NavigateTo("readerlist");
+    }
+}
