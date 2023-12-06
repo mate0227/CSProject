@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using konyvtar.Contracts;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace konyvtar.Controllers
 {
@@ -33,10 +34,18 @@ namespace konyvtar.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Book>> AddBook(Book book)
+        public async Task<IActionResult> AddBook([FromBody] Book book)
         {
+            var existingPerson = await _bookService.Get(book.Id);
+
+            if (existingPerson is not null)
+            {
+                return Conflict();
+            }
+
             await _bookService.Add(book);
-            return CreatedAtAction(nameof(GetBook), new { id = book.Id }, book);
+
+            return Ok();
         }
 
         [HttpPut("{id}")]

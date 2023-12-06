@@ -1,5 +1,5 @@
 using konyvtar;
-using Konyvtar.Context;
+using Konyvtar.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 

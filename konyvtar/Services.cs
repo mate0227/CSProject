@@ -1,4 +1,5 @@
-﻿using Konyvtar.Context;
+﻿using konyvtar.Contracts;
+using Konyvtar.Contexts;
 using Microsoft.EntityFrameworkCore;
 
 namespace konyvtar

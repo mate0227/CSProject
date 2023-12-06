@@ -1,7 +1,7 @@
-﻿using konyvtar;
+﻿using konyvtar.Contracts;
 using Microsoft.EntityFrameworkCore;
 
-namespace Konyvtar.Context
+namespace Konyvtar.Contexts
 {
     public class ServiceContexts : DbContext
     {

@@ -1,0 +1,40 @@
+﻿
+@page "/addbook"
+@using konyvtar.Contracts
+@using konyvtar_ui.Services
+@inject IBookService BookService
+
+<h3>Add a Book</h3>
+
+<form @onsubmit="AddBookToDb">
+    <label for="title">Title:</label>
+    <input type="text" id="title" @bind="newBook.Title" required />
+
+    <label for="author">Author:</label>
+    <input type="text" id="author" @bind="newBook.Author" required />
+
+    <label for="publisher">Publisher:</label>
+    <input type="text" id="publisher" @bind="newBook.Publisher" required />
+
+    <label for="publicationYear">Publication Year:</label>
+    <input type="number" id="publicationYear" @bind="newBook.PublicationYear" required />
+
+    <button type="submit">Add Book</button>
+</form>
+
+@code {
+    private Book newBook { get; set; } = new ();
+
+    private async Task AddBookToDb()
+    {
+        try
+        {
+            await BookService.AddBookAsync(newBook);
+            // Optionally, you can navigate to a different page or show a success message.
+        }
+        catch (Exception ex)
+        {
+            // Handle the exception (e.g., log, display an error message).
+        }
+    }
+}
