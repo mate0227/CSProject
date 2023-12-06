@@ -1,0 +1,21 @@
+﻿@page "/addreader"
+@inject IReaderService Readerservice
+@inject NavigationManager NavigationManager
+
+
+<h3>Add Reader</h3>
+
+<ReaderForm Reader="Reader" ButtonTitle="Add Reader" OnValidSubmit="AddReaderToDb" />
+
+@code {
+
+    private Reader Reader { get; set; } = new();
+
+    private async Task AddReaderToDb()
+    {
+
+        await Readerservice.AddReaderAsync(Reader);
+        NavigationManager.NavigateTo("readerlist");
+    }
+
+}
