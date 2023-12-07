@@ -1,0 +1,21 @@
+﻿@page "/addloan"
+@inject ILoanService Loanservice
+@inject NavigationManager NavigationManager
+
+
+<h3>Add Loan</h3>
+
+<LoanForm Loan="Loan" ButtonTitle="Add Loan" OnValidSubmit="AddLoanToDb" />
+
+@code {
+
+    private Loan Loan { get; set; } = new();
+
+    private async Task AddLoanToDb()
+    {
+
+        await Loanservice.AddLoanAsync(Loan);
+        NavigationManager.NavigateTo("loanlist");
+    }
+
+}

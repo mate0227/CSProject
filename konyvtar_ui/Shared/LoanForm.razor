@@ -1,0 +1,38 @@
+﻿<EditForm Model="Loan" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Book</label>
+        <InputNumber @bind-Value="Loan.BookId" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Reader</label>
+        <InputNumber @bind-Value="Loan.ReaderId" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label class="form-label">BorrowDate</label>
+        <InputDate @bind-Value="Loan.BorrowDate" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label class="form-label">ReturnDate</label>
+        <InputDate @bind-Value="Loan.ReturnDeadline" class="form-control" />
+
+    </div>
+
+    <button type="submit" class="btn btn-primary form-control">@ButtonTitle</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public Loan Loan { get; set; }
+
+    [Parameter]
+    public string ButtonTitle { get; set; }
+
+    [Parameter]
+    public Func<Task> OnValidSubmit { get; set; }
+}

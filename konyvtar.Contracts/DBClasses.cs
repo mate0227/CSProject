@@ -33,6 +33,7 @@ namespace konyvtar.Contracts
         [Required(ErrorMessage = "Az olvasó nevének megadása kötelező.")]
         public string Name { get; set; }
 
+        [Required(ErrorMessage = "A lakcím megadása kötelező.")]
         public string Address { get; set; }
 
         [Required(ErrorMessage = "A születési dátum megadása kötelező.")]
@@ -53,17 +54,18 @@ namespace konyvtar.Contracts
         [ForeignKey(nameof(Book))]
         public int BookId { get; set; }
 
-        [Required(ErrorMessage = "A kölcsönzés idejének megadása kötelező.")]
+        [Required(ErrorMessage = "Kölcsönzés ideje kötelező.")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Range(typeof(DateTime), "1900-01-01", "2023-12-31", ErrorMessage = "Nem lehet a jelenlegi napnál korábbi.")]
+        [Range(typeof(DateTime), "now", "2023-12-31", ErrorMessage = "Nem lehet a jelenlegi napnál korábbi.")]
         public DateTime BorrowDate { get; set; }
 
-        [Required(ErrorMessage = "A visszahozási határidő megadása kötelező.")]
+        [Required(ErrorMessage = "Visszahozási határidő kötelező.")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [DateGreaterThan("BorrowDate", ErrorMessage = "A visszahozás ideje később kell legyen, mint a kölcsönzés ideje.")]
+        [DateGreaterThan("BorrowDate", ErrorMessage = "Visszahozás ideje később kell legyen, mint a kölcsönzés ideje.")]
         public DateTime ReturnDeadline { get; set; }
+
 
 
         public virtual Reader Reader { get; set; }
