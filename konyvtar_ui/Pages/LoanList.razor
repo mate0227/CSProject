@@ -1,9 +1,12 @@
 ﻿@page "/loanlist"
 @inject ILoanService LoanService
+@inject NavigationManager Navigation
 
 @if (Loan is not null)
 {
-    <table class="table table-hover table-bordered">
+    <button class="btn btn-primary mb-3" @onclick="NavigateToAddLoan">Add Loan</button>
+
+    <table class="table table-hover table-bordered text-center">
         <thead>
         <th>Book</th>
         <th>Reader</th>
@@ -39,7 +42,11 @@
     private async Task DeleteLoan(int loanId)
     {
         await LoanService.DeleteLoanAsync(loanId);
-        // Refresh the loan list after deletion
         Loan = await LoanService.GetLoansAsync();
+    }
+
+    private void NavigateToAddLoan()
+    {
+        Navigation.NavigateTo("/addloan");
     }
 }

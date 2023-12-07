@@ -25,6 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\konyvtar_ui\Pages\LoanForm.razor" Link="LoanForm.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\konyvtar.Contracts\konyvtar.Contracts.csproj" />
   </ItemGroup>
 

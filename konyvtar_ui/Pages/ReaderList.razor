@@ -1,9 +1,12 @@
 ﻿@page "/readerlist"
 @inject IReaderService ReaderService
+@inject NavigationManager Navigation
 
 @if (Reader is not null)
 {
-    <table class="table table-hover table-bordered">
+    <button class="btn btn-primary mb-3" @onclick="NavigateToAddReader">Add Reader</button>
+
+    <table class="table table-hover table-bordered text-center">
         <thead>
         <th>Name</th>
         <th>Address</th>
@@ -27,11 +30,15 @@
 }
 
 @code {
-
     private IEnumerable<Reader>? Reader { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         Reader = await ReaderService.GetReadersAsync();
+    }
+
+    private void NavigateToAddReader()
+    {
+        Navigation.NavigateTo("/addreader");
     }
 }
