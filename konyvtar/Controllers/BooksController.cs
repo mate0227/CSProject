@@ -17,10 +17,10 @@ namespace konyvtar.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
+        public async Task<ActionResult<List<Book>>> GetBooks()
         {
             var books = await _bookService.Get();
-            return Ok(books);
+            return Ok(books.ToList());
         }
 
         [HttpGet("{id}")]

@@ -54,16 +54,17 @@ namespace konyvtar.Contracts
         [ForeignKey(nameof(Book))]
         public int BookId { get; set; }
 
+
         [Required(ErrorMessage = "Kölcsönzés ideje kötelező.")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Range(typeof(DateTime), "now", "2023-12-31", ErrorMessage = "Nem lehet a jelenlegi napnál korábbi.")]
+        [Range(typeof(DateTime), "2023-12-12", "2023-12-31", ErrorMessage = "Nem lehet a jelenlegi napnál korábbi.")]
         public DateTime BorrowDate { get; set; }
 
         [Required(ErrorMessage = "Visszahozási határidő kötelező.")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [DateGreaterThan("BorrowDate", ErrorMessage = "Visszahozás ideje később kell legyen, mint a kölcsönzés ideje.")]
+        [DateLessThan("BorrowDate", ErrorMessage = "Visszahozás határideje később kell legyen, mint a kölcsönzés ideje.")]
         public DateTime ReturnDeadline { get; set; }
 
 
@@ -71,6 +72,8 @@ namespace konyvtar.Contracts
         public virtual Reader Reader { get; set; }
         public virtual Book Book { get; set; }
     }
+
+
 
     public class DateGreaterThanAttribute : ValidationAttribute
     {
@@ -102,4 +105,36 @@ namespace konyvtar.Contracts
                 : new ValidationResult(ErrorMessage ?? $"{validationContext.DisplayName} must be greater than {_comparisonProperty}.");
         }
     }
+
+    public class DateLessThanAttribute : ValidationAttribute
+    {
+        private readonly string _comparisonProperty;
+
+        public DateLessThanAttribute(string comparisonProperty)
+        {
+            _comparisonProperty = comparisonProperty;
+        }
+
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            var propertyInfo = validationContext.ObjectType.GetProperty(_comparisonProperty);
+
+            if (propertyInfo == null)
+            {
+                return new ValidationResult($"Unknown property: {_comparisonProperty}");
+            }
+
+            var comparisonValue = propertyInfo.GetValue(validationContext.ObjectInstance) as IComparable;
+
+            if (comparisonValue == null)
+            {
+                return new ValidationResult($"The property {_comparisonProperty} is not IComparable");
+            }
+
+            return value != null && (value as IComparable).CompareTo(comparisonValue) >= 0
+                ? ValidationResult.Success
+                : new ValidationResult(ErrorMessage ?? $"{validationContext.DisplayName} must be less than {_comparisonProperty}.");
+        }
+    }
+
 }

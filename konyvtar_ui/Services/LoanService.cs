@@ -15,7 +15,7 @@ namespace konyvtar_ui.Services
             _httpClient.GetFromJsonAsync<IEnumerable<Loan>>("Loans");
         public Task<Loan?> GetLoanAsync(int id) =>
             _httpClient.GetFromJsonAsync<Loan>($"Loans/{id}");
-        public Task AddLoanAsync(Loan loan) =>
+        public Task AddLoanAsync(LoanDTO loan) =>
             _httpClient.PostAsJsonAsync("Loans", loan);
 
         public Task UpdateLoanAsync(int id, Loan loan) =>

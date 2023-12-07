@@ -16,10 +16,10 @@ namespace konyvtar.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Reader>>> GetReaders()
+        public async Task<ActionResult<List<Reader>>> GetReaders()
         {
             var readers = await _readerService.Get();
-            return Ok(readers);
+            return Ok(readers.ToList());
         }
 
         [HttpGet("{id}")]

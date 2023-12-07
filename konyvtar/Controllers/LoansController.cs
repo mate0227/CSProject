@@ -9,17 +9,21 @@ namespace konyvtar.Controllers
     public class LoansController : ControllerBase
     {
         private readonly ILoanService _loanService;
+        private readonly IBookService _bookService;
+        private readonly IReaderService _readerService;
 
-        public LoansController(ILoanService loanService)
+        public LoansController(ILoanService loanService, IBookService bookService, IReaderService readerService)
         {
             _loanService = loanService;
+            _bookService = bookService;
+            _readerService = readerService;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Loan>>> GetLoans()
+        public async Task<ActionResult<List<Loan>>> GetLoans()
         {
             var loans = await _loanService.Get();
-            return Ok(loans);
+            return Ok(loans.ToList());
         }
 
         [HttpGet("{id}")]
@@ -34,13 +38,23 @@ namespace konyvtar.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddLoan([FromBody] Loan loan)
+        public async Task<IActionResult> AddLoan([FromBody] LoanDTO loanDTO)
         {
-            var existingLoan = await _loanService.Get(loan.Id);
+            var existingLoan = await _loanService.Get(loanDTO.Id);
             if (existingLoan != null)
             {
                 return Conflict();
             }
+
+            Loan loan = new Loan()
+            {
+                BookId = loanDTO.BookId,
+                ReaderId = loanDTO.ReaderId,
+                BorrowDate = loanDTO.BorrowDate,
+                ReturnDeadline = loanDTO.ReturnDeadline,
+                Book = await _bookService.Get(loanDTO.BookId),
+                Reader = await _readerService.Get(loanDTO.ReaderId)
+            };
 
             await _loanService.Add(loan);
 
