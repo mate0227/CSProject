@@ -4,11 +4,23 @@
 
     <div class="mb-3">
         <label class="form-label">Book</label>
-        <InputNumber @bind-Value="Loan.BookId" class="form-control" />
+        <select @bind="Loan.BookId" class="form-control">
+            <option value="">Select a Book</option>
+            @foreach (var book in Books)
+            {
+                <option value="@book.Id">@book.Title</option>
+            }
+        </select>
     </div>
     <div class="mb-3">
         <label class="form-label">Reader</label>
-        <InputNumber @bind-Value="Loan.ReaderId" class="form-control" />
+        <select @bind="Loan.ReaderId" class="form-control">
+            <option value="">Select a Reader</option>
+            @foreach (var reader in Readers)
+            {
+                <option value="@reader.Id">@reader.Name</option>
+            }
+        </select>
     </div>
     <div class="mb-3">
         <label class="form-label">BorrowDate</label>
@@ -23,6 +35,11 @@
 </EditForm>
 
 @code {
+    [Parameter]
+    public IEnumerable<Book> Books { get; set; }
+
+    [Parameter]
+    public IEnumerable<Reader> Readers { get; set; }
 
     [Parameter]
     public LoanDTO Loan { get; set; }

@@ -1,21 +1,27 @@
 ﻿@page "/addloan"
 @inject ILoanService Loanservice
+@inject IReaderService ReaderService
+@inject IBookService BookService
 @inject NavigationManager NavigationManager
-
 
 <h3>Add Loan</h3>
 
-<LoanForm Loan="Loan" ButtonTitle="Add Loan" OnValidSubmit="AddLoanToDb" />
+<LoanForm Loan="Loan" ButtonTitle="Add Loan" OnValidSubmit="AddLoanToDb" Books="@Books" Readers="@Readers" />
 
 @code {
-
     private LoanDTO Loan { get; set; } = new();
+    private IEnumerable<Book> Books { get; set; }
+    private IEnumerable<Reader> Readers { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Books = await BookService.GetBooksAsync();
+        Readers = await ReaderService.GetReadersAsync();
+    }
 
     private async Task AddLoanToDb()
     {
-
         await Loanservice.AddLoanAsync(Loan);
         NavigationManager.NavigateTo("loanlist");
     }
-
 }
