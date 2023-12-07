@@ -29,4 +29,17 @@
 
     [Parameter]
     public Func<Task> OnValidSubmit { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (Reader.BirthDate == default)
+        {
+            Reader.BirthDate = DateTime.Now.Date;
+        }
+    }
+
+    private string FormatDate(DateTime date)
+    {
+        return date.ToString("yyyy-MM-dd");
+    }
 }
