@@ -20,7 +20,7 @@
                     <td>@loan.BorrowDate</td>
                     <td>@loan.ReturnDeadline</td>
                     <td>
-                        <a href="loandetails/@loan.Id">Details</a>
+                        <button class="btn btn-danger" @onclick="() => DeleteLoan(loan.Id)">Delete</button>
                     </td>
                 </tr>
             }
@@ -34,6 +34,13 @@
 
     protected override async Task OnInitializedAsync()
     {
+        Loan = await LoanService.GetLoansAsync();
+    }
+
+    private async Task DeleteLoan(int loanId)
+    {
+        await LoanService.DeleteLoanAsync(loanId);
+        // Refresh the loan list after deletion
         Loan = await LoanService.GetLoansAsync();
     }
 }
