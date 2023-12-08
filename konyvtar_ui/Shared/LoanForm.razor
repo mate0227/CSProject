@@ -5,7 +5,6 @@
     <div class="mb-3">
         <label class="form-label">Book</label>
         <select @bind="Loan.BookId" class="form-control">
-            <option value="">Select a Book</option>
             @foreach (var book in Books)
             {
                 <option value="@book.Id">@book.Title</option>
@@ -15,7 +14,6 @@
     <div class="mb-3">
         <label class="form-label">Reader</label>
         <select @bind="Loan.ReaderId" class="form-control">
-            <option value="">Select a Reader</option>
             @foreach (var reader in Readers)
             {
                 <option value="@reader.Id">@reader.Name</option>
@@ -52,6 +50,8 @@
 
     protected override void OnInitialized()
     {
+
+
         if (Loan.BorrowDate == default)
         {
             Loan.BorrowDate = DateTime.Now.Date;
