@@ -20,8 +20,8 @@
                 <tr>
                     <td>@loan.Book.Title</td>
                     <td>@loan.Reader.Name</td>
-                    <td>@loan.BorrowDate</td>
-                    <td>@loan.ReturnDeadline</td>
+                    <td>@loan.BorrowDate.ToString("yyyy-MM-dd")</td>
+                    <td>@loan.ReturnDeadline.ToString("yyyy-MM-dd")</td>
                     <td>
                         <button class="btn btn-danger" @onclick="() => DeleteLoan(loan.Id)">Delete</button>
                     </td>
@@ -49,4 +49,5 @@
     {
         Navigation.NavigateTo("/addloan");
     }
+
 }
