@@ -4556,3 +4556,1529 @@ WHERE [b].[Id] = @__p_0
 2023-12-11 20:07:10.018 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 18.4006ms
 2023-12-11 20:07:10.020 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
 2023-12-11 20:07:10.021 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 24.3664ms
+2023-12-11 22:29:54.548 +01:00 [INF] Now listening on: https://localhost:7278
+2023-12-11 22:29:54.595 +01:00 [INF] Now listening on: http://localhost:5076
+2023-12-11 22:29:54.598 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 22:29:54.599 +01:00 [INF] Hosting environment: Development
+2023-12-11 22:29:54.600 +01:00 [INF] Content root path: D:\github\CSProject\konyvtar
+2023-12-11 22:30:00.244 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/swagger/index.html - -
+2023-12-11 22:30:01.409 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/swagger/index.html - - - 200 - text/html;charset=utf-8 1168.5248ms
+2023-12-11 22:30:01.450 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/swagger/swagger-ui.css - -
+2023-12-11 22:30:01.450 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - -
+2023-12-11 22:30:01.452 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/_vs/browserLink - -
+2023-12-11 22:30:01.465 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 14.8883ms
+2023-12-11 22:30:01.483 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-11 22:30:01.639 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/swagger/swagger-ui.css - - - 0 144929 text/css 189.1128ms
+2023-12-11 22:30:01.703 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/swagger/favicon-32x32.png - -
+2023-12-11 22:30:01.706 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 254.0452ms
+2023-12-11 22:30:01.710 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-12-11 22:30:01.712 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/swagger/favicon-32x32.png - - - 0 628 image/png 8.9815ms
+2023-12-11 22:30:01.817 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - -
+2023-12-11 22:30:02.032 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 215.4397ms
+2023-12-11 22:30:27.234 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 22:30:27.238 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:27.255 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 21.3372ms
+2023-12-11 22:30:27.269 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 22:30:27.270 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:27.275 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:27.295 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 22:30:27.473 +01:00 [INF] Readers retrieved
+2023-12-11 22:30:27.679 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:27.681 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:27.682 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.8607ms
+2023-12-11 22:30:27.688 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:27.689 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:27.689 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:27.693 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:27.698 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:28.203 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 22:30:28.208 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:28.209 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 6.3996ms
+2023-12-11 22:30:28.215 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 22:30:28.216 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:28.216 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:28.221 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 22:30:28.228 +01:00 [INF] Books retrieved
+2023-12-11 22:30:29.388 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:29.389 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:29.390 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.8972ms
+2023-12-11 22:30:29.481 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:29.482 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:29.483 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:29.484 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:29.490 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:29.707 +01:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 22:30:29.707 +01:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:29.707 +01:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 22:30:29.707 +01:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:29.777 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:29.777 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:29.777 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:29.777 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:29.817 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 1587.361ms
+2023-12-11 22:30:29.818 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 2520.5552ms
+2023-12-11 22:30:29.819 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:29.820 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:29.827 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 2557.8808ms
+2023-12-11 22:30:29.827 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 1612.3563ms
+2023-12-11 22:30:29.855 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:29.856 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:29.857 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.6678ms
+2023-12-11 22:30:29.956 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:29.957 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:29.958 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:29.959 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:29.960 +01:00 [INF] Executed DbCommand (45ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:29.960 +01:00 [INF] Executed DbCommand (45ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:29.963 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:29.970 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:29.974 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:29.977 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:29.988 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:29.988 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:29.988 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:29.992 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:29.994 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:29.997 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:29.999 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:30.001 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:30.004 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:30.007 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 2311.6204ms
+2023-12-11 22:30:30.009 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 48.2464ms
+2023-12-11 22:30:30.012 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 525.498ms
+2023-12-11 22:30:30.013 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:30.014 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:30.015 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:30.016 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 2328.5843ms
+2023-12-11 22:30:30.017 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 61.7049ms
+2023-12-11 22:30:30.019 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 537.7828ms
+2023-12-11 22:30:31.019 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 22:30:31.020 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:31.022 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 2.1026ms
+2023-12-11 22:30:31.108 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 22:30:31.109 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:31.110 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:31.111 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 22:30:31.113 +01:00 [INF] Books retrieved
+2023-12-11 22:30:31.116 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 22:30:31.119 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:31.121 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 8.0369ms
+2023-12-11 22:30:31.122 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:31.123 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 15.7370ms
+2023-12-11 22:30:31.130 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 22:30:31.131 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:31.132 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.8382ms
+2023-12-11 22:30:31.138 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 22:30:31.139 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:31.140 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:31.142 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 22:30:31.145 +01:00 [INF] Readers retrieved
+2023-12-11 22:30:31.149 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 22:30:31.152 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:31.153 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 8.1354ms
+2023-12-11 22:30:31.155 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:31.156 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 18.0327ms
+2023-12-11 22:30:31.164 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:31.165 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:31.167 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.6745ms
+2023-12-11 22:30:31.174 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:31.175 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:31.177 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:31.178 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:31.182 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:31.186 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:31.190 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:31.194 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:31.201 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:31.208 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:31.213 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:31.218 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 35.5302ms
+2023-12-11 22:30:31.219 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:31.221 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 46.9563ms
+2023-12-11 22:30:42.956 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5076/Loans - -
+2023-12-11 22:30:42.957 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:42.959 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5076/Loans - - - 204 - - 3.3375ms
+2023-12-11 22:30:42.962 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5076/Loans application/json;+charset=utf-8 106
+2023-12-11 22:30:42.963 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:42.963 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5076/Loans application/json;+charset=utf-8 106 - 307 0 - 1.5146ms
+2023-12-11 22:30:42.969 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7278/Loans - -
+2023-12-11 22:30:42.969 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:42.970 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7278/Loans - - - 204 - - 1.5094ms
+2023-12-11 22:30:42.973 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7278/Loans application/json;+charset=utf-8 106
+2023-12-11 22:30:42.973 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:42.974 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.AddLoan (konyvtar)'
+2023-12-11 22:30:42.983 +01:00 [INF] Route matched with {action = "AddLoan", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddLoan(LoanDTO) on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:43.079 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2023-12-11 22:30:43.084 +01:00 [INF] Loan retrieved. Loan: null
+2023-12-11 22:30:43.091 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:43.094 +01:00 [INF] Book retrieved. Book: null
+2023-12-11 22:30:43.101 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:43.104 +01:00 [INF] Reader retrieved. Reader: null
+2023-12-11 22:30:43.193 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Loans] ([BookId], [BorrowDate], [ReaderId], [ReturnDeadline])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2023-12-11 22:30:43.233 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'Konyvtar.Contexts.ServiceContexts'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Loans_Books_BookId". The conflict occurred in database "KonyvtarCore", table "dbo.Books", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8bf3c7e9-c035-4f74-94a3-0864c424b4bd
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Loans_Books_BookId". The conflict occurred in database "KonyvtarCore", table "dbo.Books", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8bf3c7e9-c035-4f74-94a3-0864c424b4bd
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-12-11 22:30:43.409 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.AddLoan (konyvtar) in 424.3284ms
+2023-12-11 22:30:43.411 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.AddLoan (konyvtar)'
+2023-12-11 22:30:43.414 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Loans_Books_BookId". The conflict occurred in database "KonyvtarCore", table "dbo.Books", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8bf3c7e9-c035-4f74-94a3-0864c424b4bd
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at konyvtar.Services.LoanService.Add(Loan loan) in D:\github\CSProject\konyvtar\Services\LoanService.cs:line 23
+   at konyvtar.Controllers.LoansController.AddLoan(LoanDTO loanDTO) in D:\github\CSProject\konyvtar\Controllers\LoansController.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-11 22:30:43.465 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7278/Loans application/json;+charset=utf-8 106 - 500 - text/plain;+charset=utf-8 492.9123ms
+2023-12-11 22:30:43.489 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:43.490 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:43.490 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.4727ms
+2023-12-11 22:30:43.495 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:43.496 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:43.497 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:43.497 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:43.502 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:43.504 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:43.508 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:43.511 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:43.517 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:43.520 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:43.525 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:43.528 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 26.8007ms
+2023-12-11 22:30:43.530 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:43.531 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 36.1283ms
+2023-12-11 22:30:47.493 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 22:30:47.494 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:47.495 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 2.3709ms
+2023-12-11 22:30:47.500 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 22:30:47.501 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:47.501 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:47.502 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 22:30:47.505 +01:00 [INF] Books retrieved
+2023-12-11 22:30:47.508 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 22:30:47.510 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:47.512 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 6.9733ms
+2023-12-11 22:30:47.513 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:47.514 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 14.0998ms
+2023-12-11 22:30:47.518 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 22:30:47.519 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:47.519 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.4162ms
+2023-12-11 22:30:47.523 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 22:30:47.524 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:47.525 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:47.526 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 22:30:47.528 +01:00 [INF] Readers retrieved
+2023-12-11 22:30:47.530 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 22:30:47.533 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:47.534 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 6.7416ms
+2023-12-11 22:30:47.535 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:47.536 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 13.3391ms
+2023-12-11 22:30:47.542 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:47.542 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:47.543 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.4764ms
+2023-12-11 22:30:47.547 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:47.548 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:47.549 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:47.550 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:47.552 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:47.554 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:47.556 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:47.559 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:47.563 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:47.567 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:47.571 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:47.573 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 21.7438ms
+2023-12-11 22:30:47.575 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:47.577 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 29.8186ms
+2023-12-11 22:30:48.256 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:48.257 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:48.258 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.4074ms
+2023-12-11 22:30:48.285 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:48.287 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:48.289 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:48.291 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:48.296 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:48.300 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:48.305 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:48.310 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:48.318 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:48.328 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:48.339 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:48.346 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 50.2238ms
+2023-12-11 22:30:48.347 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:48.349 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 64.0097ms
+2023-12-11 22:30:48.972 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 22:30:48.974 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:48.975 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 2.5138ms
+2023-12-11 22:30:48.978 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 22:30:48.979 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:48.980 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:48.981 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 22:30:48.983 +01:00 [INF] Readers retrieved
+2023-12-11 22:30:48.985 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 22:30:48.988 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:48.990 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 7.4875ms
+2023-12-11 22:30:48.991 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:48.993 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 14.6945ms
+2023-12-11 22:30:49.473 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 22:30:49.474 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:49.475 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 2.4820ms
+2023-12-11 22:30:49.479 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 22:30:49.480 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:49.482 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:49.483 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 22:30:49.485 +01:00 [INF] Books retrieved
+2023-12-11 22:30:49.489 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 22:30:49.493 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:49.495 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 10.3503ms
+2023-12-11 22:30:49.497 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:49.498 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 18.5370ms
+2023-12-11 22:30:49.503 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:49.505 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:49.506 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.1407ms
+2023-12-11 22:30:49.511 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:49.512 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:49.513 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:49.514 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:49.516 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:49.519 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:49.521 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:49.524 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:49.528 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:49.533 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:49.538 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:49.541 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 25.0448ms
+2023-12-11 22:30:49.542 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:49.543 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 32.2764ms
+2023-12-11 22:30:52.530 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 22:30:52.531 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:52.532 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.6633ms
+2023-12-11 22:30:52.535 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 22:30:52.536 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:52.537 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:52.538 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 22:30:52.540 +01:00 [INF] Readers retrieved
+2023-12-11 22:30:52.542 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 22:30:52.545 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:52.546 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 7.0234ms
+2023-12-11 22:30:52.548 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:30:52.549 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 13.5469ms
+2023-12-11 22:30:53.899 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 22:30:53.900 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:53.902 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 2.2543ms
+2023-12-11 22:30:53.907 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 22:30:53.908 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:53.909 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:53.910 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 22:30:53.912 +01:00 [INF] Books retrieved
+2023-12-11 22:30:53.914 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 22:30:53.917 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:53.919 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 7.0894ms
+2023-12-11 22:30:53.920 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:30:53.921 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 13.8533ms
+2023-12-11 22:30:53.925 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:53.926 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:53.927 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.5206ms
+2023-12-11 22:30:53.931 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:53.932 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:53.933 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:53.934 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:53.937 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:53.940 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:53.943 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:53.946 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:53.950 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:53.954 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:53.958 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:53.961 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 24.421ms
+2023-12-11 22:30:53.962 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:53.964 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 32.7887ms
+2023-12-11 22:30:55.008 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:30:55.009 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:55.011 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.4279ms
+2023-12-11 22:30:55.015 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:30:55.016 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:30:55.016 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:55.017 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:30:55.020 +01:00 [INF] Loans retrieved
+2023-12-11 22:30:55.022 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:30:55.025 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:30:55.029 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:55.034 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:55.039 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:30:55.043 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:30:55.046 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 26.0643ms
+2023-12-11 22:30:55.047 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:30:55.049 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 34.0273ms
+2023-12-11 22:31:01.839 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 22:31:01.841 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:01.842 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 2.6482ms
+2023-12-11 22:31:01.848 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 22:31:01.849 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:01.850 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:31:01.851 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 22:31:01.854 +01:00 [INF] Readers retrieved
+2023-12-11 22:31:01.856 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 22:31:01.859 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:31:01.860 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 6.9437ms
+2023-12-11 22:31:01.862 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:31:01.863 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 15.2405ms
+2023-12-11 22:31:03.107 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 22:31:03.108 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:03.108 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 1.5106ms
+2023-12-11 22:31:03.112 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 22:31:03.113 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:03.114 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:31:03.115 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 22:31:03.116 +01:00 [INF] Books retrieved
+2023-12-11 22:31:03.119 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 22:31:03.122 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:31:03.124 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 8.1738ms
+2023-12-11 22:31:03.126 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 22:31:03.128 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 15.5289ms
+2023-12-11 22:31:03.132 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:31:03.133 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:03.133 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.3938ms
+2023-12-11 22:31:03.136 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:31:03.137 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:03.138 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:31:03.139 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:31:03.141 +01:00 [INF] Loans retrieved
+2023-12-11 22:31:03.143 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:31:03.146 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:31:03.149 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:31:03.152 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:31:03.155 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:31:03.159 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:31:03.161 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 20.6258ms
+2023-12-11 22:31:03.163 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:31:03.164 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 27.4965ms
+2023-12-11 22:31:06.091 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 22:31:06.092 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:06.093 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.8906ms
+2023-12-11 22:31:06.097 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 22:31:06.098 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:06.099 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:31:06.100 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 22:31:06.102 +01:00 [INF] Readers retrieved
+2023-12-11 22:31:06.104 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 22:31:06.108 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:31:06.110 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 8.0091ms
+2023-12-11 22:31:06.111 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 22:31:06.113 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 16.8158ms
+2023-12-11 22:31:06.835 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 22:31:06.837 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:06.839 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 3.5046ms
+2023-12-11 22:31:06.843 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 22:31:06.845 +01:00 [INF] CORS policy execution successful.
+2023-12-11 22:31:06.846 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:31:06.847 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 22:31:06.849 +01:00 [INF] Loans retrieved
+2023-12-11 22:31:06.852 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 22:31:06.855 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 22:31:06.858 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:31:06.862 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:31:06.867 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 22:31:06.872 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 22:31:06.875 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 25.8539ms
+2023-12-11 22:31:06.876 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 22:31:06.878 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 34.5513ms
+2023-12-11 23:00:14.906 +01:00 [INF] Now listening on: https://localhost:7278
+2023-12-11 23:00:14.949 +01:00 [INF] Now listening on: http://localhost:5076
+2023-12-11 23:00:14.953 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 23:00:14.955 +01:00 [INF] Hosting environment: Development
+2023-12-11 23:00:14.956 +01:00 [INF] Content root path: D:\github\CSProject\konyvtar
+2023-12-11 23:00:19.183 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/swagger/index.html - -
+2023-12-11 23:00:19.386 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/swagger/index.html - - - 200 - text/html;charset=utf-8 203.8640ms
+2023-12-11 23:00:19.413 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - -
+2023-12-11 23:00:19.413 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/swagger/swagger-ui.css - -
+2023-12-11 23:00:19.426 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/_vs/browserLink - -
+2023-12-11 23:00:19.435 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 21.8423ms
+2023-12-11 23:00:19.445 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-11 23:00:19.446 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/swagger/swagger-ui.css - - - 0 144929 text/css 33.0879ms
+2023-12-11 23:00:19.469 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.5826ms
+2023-12-11 23:00:19.485 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/swagger/favicon-32x32.png - -
+2023-12-11 23:00:19.488 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-12-11 23:00:19.489 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/swagger/favicon-32x32.png - - - 0 628 image/png 4.2752ms
+2023-12-11 23:00:19.515 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - -
+2023-12-11 23:00:19.624 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 108.9388ms
+2023-12-11 23:00:23.245 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 23:00:23.249 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:23.259 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 14.1110ms
+2023-12-11 23:00:23.274 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 23:00:23.275 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:23.278 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:23.296 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 23:00:23.652 +01:00 [INF] Books retrieved
+2023-12-11 23:00:26.039 +01:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 23:00:26.120 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:26.131 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 2829.3719ms
+2023-12-11 23:00:26.133 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:26.140 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 2865.3748ms
+2023-12-11 23:00:26.178 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:26.179 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:26.180 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.4778ms
+2023-12-11 23:00:26.185 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:26.186 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:26.187 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:26.191 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:26.196 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:26.237 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:26.250 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:26.399 +01:00 [INF] Executed DbCommand (49ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:26.431 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:26.438 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:26.442 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:26.445 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 251.7541ms
+2023-12-11 23:00:26.447 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:26.448 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 263.0801ms
+2023-12-11 23:00:28.584 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 23:00:28.585 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:28.585 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.6715ms
+2023-12-11 23:00:28.590 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 23:00:28.590 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:28.591 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:28.595 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 23:00:28.600 +01:00 [INF] Readers retrieved
+2023-12-11 23:00:28.646 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 23:00:28.650 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:28.652 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 54.6556ms
+2023-12-11 23:00:28.653 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:28.654 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 64.8574ms
+2023-12-11 23:00:30.592 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:30.593 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:30.594 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.9777ms
+2023-12-11 23:00:30.600 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:30.601 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:30.602 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:30.603 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:30.606 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:30.608 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:30.611 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:30.613 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:30.618 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:30.621 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:30.624 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:30.626 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 21.6703ms
+2023-12-11 23:00:30.627 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:30.629 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 28.8278ms
+2023-12-11 23:00:31.210 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 23:00:31.212 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:31.213 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 2.8776ms
+2023-12-11 23:00:31.224 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 23:00:31.225 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:31.227 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:31.227 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 23:00:31.230 +01:00 [INF] Books retrieved
+2023-12-11 23:00:31.232 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 23:00:31.235 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:31.236 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 7.0826ms
+2023-12-11 23:00:31.237 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:31.238 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 14.4513ms
+2023-12-11 23:00:31.243 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 23:00:31.244 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:31.244 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.4037ms
+2023-12-11 23:00:31.248 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 23:00:31.249 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:31.249 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:31.250 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 23:00:31.253 +01:00 [INF] Readers retrieved
+2023-12-11 23:00:31.256 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 23:00:31.258 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:31.260 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 6.9908ms
+2023-12-11 23:00:31.261 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:31.262 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 13.9566ms
+2023-12-11 23:00:31.265 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:31.266 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:31.267 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.9344ms
+2023-12-11 23:00:31.270 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:31.271 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:31.272 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:31.273 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:31.276 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:31.278 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:31.280 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:31.283 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:31.286 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:31.290 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:31.294 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:31.296 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 21.503ms
+2023-12-11 23:00:31.297 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:31.298 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 28.0407ms
+2023-12-11 23:00:32.591 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 23:00:32.592 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:32.594 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 2.5179ms
+2023-12-11 23:00:32.597 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 23:00:32.599 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:32.600 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:32.601 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 23:00:32.603 +01:00 [INF] Books retrieved
+2023-12-11 23:00:32.605 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 23:00:32.608 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:32.609 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 6.551ms
+2023-12-11 23:00:32.610 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:32.612 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 14.1662ms
+2023-12-11 23:00:32.616 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:32.617 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:32.617 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.4894ms
+2023-12-11 23:00:32.621 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:32.622 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:32.623 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:32.624 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:32.625 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:32.628 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:32.630 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:32.632 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:32.637 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:32.640 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:32.644 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:32.646 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 21.1076ms
+2023-12-11 23:00:32.648 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:32.649 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 27.2110ms
+2023-12-11 23:00:33.575 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:33.576 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:33.577 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.1638ms
+2023-12-11 23:00:33.581 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:33.582 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:33.583 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:33.584 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:33.586 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:33.589 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:33.592 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:33.594 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:33.597 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:33.601 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:33.603 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:33.606 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 20.2454ms
+2023-12-11 23:00:33.608 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:33.609 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 27.6741ms
+2023-12-11 23:00:35.191 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 23:00:35.192 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:35.193 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 2.7040ms
+2023-12-11 23:00:35.198 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 23:00:35.199 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:35.199 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:35.200 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 23:00:35.203 +01:00 [INF] Books retrieved
+2023-12-11 23:00:35.205 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 23:00:35.207 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:35.208 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 6.0934ms
+2023-12-11 23:00:35.210 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:35.211 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 13.1329ms
+2023-12-11 23:00:35.216 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 23:00:35.217 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:35.218 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.4574ms
+2023-12-11 23:00:35.224 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 23:00:35.225 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:35.226 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:35.226 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 23:00:35.228 +01:00 [INF] Readers retrieved
+2023-12-11 23:00:35.230 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 23:00:35.233 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:35.234 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 5.8583ms
+2023-12-11 23:00:35.235 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:35.236 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 11.5733ms
+2023-12-11 23:00:35.241 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:35.241 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:35.242 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.3479ms
+2023-12-11 23:00:35.247 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:35.247 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:35.248 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:35.249 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:35.251 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:35.253 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:35.256 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:35.259 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:35.262 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:35.266 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:35.269 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:35.272 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 20.6073ms
+2023-12-11 23:00:35.273 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:35.274 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 27.0802ms
+2023-12-11 23:00:47.369 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:47.370 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:47.370 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.6480ms
+2023-12-11 23:00:47.375 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:47.376 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:47.376 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:47.377 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:47.378 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:47.380 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:47.383 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:47.385 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:47.388 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:47.391 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:47.394 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:47.396 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 17.8301ms
+2023-12-11 23:00:47.397 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:47.398 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 23.6481ms
+2023-12-11 23:00:53.196 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5076/Loans/20 - -
+2023-12-11 23:00:53.197 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.198 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5076/Loans/20 - - - 204 - - 2.0494ms
+2023-12-11 23:00:53.201 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5076/Loans/20 - -
+2023-12-11 23:00:53.201 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.202 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5076/Loans/20 - - - 307 0 - 1.9353ms
+2023-12-11 23:00:53.207 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7278/Loans/20 - -
+2023-12-11 23:00:53.208 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.209 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7278/Loans/20 - - - 204 - - 1.7467ms
+2023-12-11 23:00:53.211 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:7278/Loans/20 - -
+2023-12-11 23:00:53.212 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.213 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.DeleteLoan (konyvtar)'
+2023-12-11 23:00:53.221 +01:00 [INF] Route matched with {action = "DeleteLoan", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[konyvtar.Contracts.Loan]] DeleteLoan(Int32) on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:53.244 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2023-12-11 23:00:53.282 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:53.287 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:53.291 +01:00 [INF] Loan retrieved. Loan: {"Reader":{"LazyLoader":{"$type":"LazyLoader"},"Id":7,"Name":"Oliver Bennett","Address":"123 Maple Street, Suite 456, Cityville, State 12345","BirthDate":"1952-05-15T00:00:00.0000000","$type":"ReaderProxy"},"Book":{"LazyLoader":{"$type":"LazyLoader"},"Id":12,"Title":"To Kill a Mockingbird","Author":"Harper Lee","Publisher":"J.B. Lippincott & Co.","PublicationYear":1960,"$type":"BookProxy"},"LazyLoader":{"$type":"LazyLoader"},"Id":20,"ReaderId":7,"BookId":12,"BorrowDate":"2023-12-28T00:00:00.0000000","ReturnDeadline":"2030-01-15T00:00:00.0000000","$type":"LoanProxy"}
+2023-12-11 23:00:53.383 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Loans]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-12-11 23:00:53.401 +01:00 [INF] Loan deleted. Loan: {"Reader":{"LazyLoader":{"$type":"LazyLoader"},"Id":7,"Name":"Oliver Bennett","Address":"123 Maple Street, Suite 456, Cityville, State 12345","BirthDate":"1952-05-15T00:00:00.0000000","$type":"ReaderProxy"},"Book":{"LazyLoader":{"$type":"LazyLoader"},"Id":12,"Title":"To Kill a Mockingbird","Author":"Harper Lee","Publisher":"J.B. Lippincott & Co.","PublicationYear":1960,"$type":"BookProxy"},"LazyLoader":null,"Id":20,"ReaderId":7,"BookId":12,"BorrowDate":"2023-12-28T00:00:00.0000000","ReturnDeadline":"2030-01-15T00:00:00.0000000","$type":"LoanProxy"}
+2023-12-11 23:00:53.417 +01:00 [INF] Executing OkObjectResult, writing value of type 'Castle.Proxies.LoanProxy'.
+2023-12-11 23:00:53.420 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.DeleteLoan (konyvtar) in 196.4554ms
+2023-12-11 23:00:53.421 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.DeleteLoan (konyvtar)'
+2023-12-11 23:00:53.422 +01:00 [INF] Request finished HTTP/2 DELETE https://localhost:7278/Loans/20 - - - 200 - application/json;+charset=utf-8 210.8266ms
+2023-12-11 23:00:53.425 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:53.426 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.427 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.4367ms
+2023-12-11 23:00:53.431 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:53.432 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.433 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:53.433 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:53.435 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:53.438 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:53.441 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:53.443 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:53.447 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:53.449 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 13.6621ms
+2023-12-11 23:00:53.450 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:53.451 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 19.9561ms
+2023-12-11 23:00:53.955 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5076/Loans/19 - -
+2023-12-11 23:00:53.956 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.957 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5076/Loans/19 - - - 204 - - 1.6511ms
+2023-12-11 23:00:53.958 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5076/Loans/19 - -
+2023-12-11 23:00:53.959 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.960 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5076/Loans/19 - - - 307 0 - 1.8241ms
+2023-12-11 23:00:53.964 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7278/Loans/19 - -
+2023-12-11 23:00:53.965 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.965 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7278/Loans/19 - - - 204 - - 1.7102ms
+2023-12-11 23:00:53.968 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:7278/Loans/19 - -
+2023-12-11 23:00:53.968 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:53.969 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.DeleteLoan (konyvtar)'
+2023-12-11 23:00:53.970 +01:00 [INF] Route matched with {action = "DeleteLoan", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[konyvtar.Contracts.Loan]] DeleteLoan(Int32) on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:53.974 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2023-12-11 23:00:53.978 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:00:53.981 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:00:53.983 +01:00 [INF] Loan retrieved. Loan: {"Reader":{"LazyLoader":{"$type":"LazyLoader"},"Id":9,"Name":"Nathanial Hayes","Address":"456 Pine Road, Unit 789, Villagetown, State 23456","BirthDate":"1943-12-19T00:00:00.0000000","$type":"ReaderProxy"},"Book":{"LazyLoader":{"$type":"LazyLoader"},"Id":14,"Title":"The Great Gatsby","Author":"F. Scott Fitzgerald","Publisher":"Charles Scribner's Sons","PublicationYear":1922,"$type":"BookProxy"},"LazyLoader":{"$type":"LazyLoader"},"Id":19,"ReaderId":9,"BookId":14,"BorrowDate":"2023-12-13T00:00:00.0000000","ReturnDeadline":"2023-12-19T00:00:00.0000000","$type":"LoanProxy"}
+2023-12-11 23:00:53.999 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Loans]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-12-11 23:00:54.002 +01:00 [INF] Loan deleted. Loan: {"Reader":{"LazyLoader":{"$type":"LazyLoader"},"Id":9,"Name":"Nathanial Hayes","Address":"456 Pine Road, Unit 789, Villagetown, State 23456","BirthDate":"1943-12-19T00:00:00.0000000","$type":"ReaderProxy"},"Book":{"LazyLoader":{"$type":"LazyLoader"},"Id":14,"Title":"The Great Gatsby","Author":"F. Scott Fitzgerald","Publisher":"Charles Scribner's Sons","PublicationYear":1922,"$type":"BookProxy"},"LazyLoader":null,"Id":19,"ReaderId":9,"BookId":14,"BorrowDate":"2023-12-13T00:00:00.0000000","ReturnDeadline":"2023-12-19T00:00:00.0000000","$type":"LoanProxy"}
+2023-12-11 23:00:54.015 +01:00 [INF] Executing OkObjectResult, writing value of type 'Castle.Proxies.LoanProxy'.
+2023-12-11 23:00:54.017 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.DeleteLoan (konyvtar) in 45.3904ms
+2023-12-11 23:00:54.018 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.DeleteLoan (konyvtar)'
+2023-12-11 23:00:54.020 +01:00 [INF] Request finished HTTP/2 DELETE https://localhost:7278/Loans/19 - - - 200 - application/json;+charset=utf-8 52.0496ms
+2023-12-11 23:00:54.024 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:54.024 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:54.025 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.6452ms
+2023-12-11 23:00:54.029 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:54.030 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:54.030 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:54.031 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:54.033 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:54.035 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:54.038 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:54.040 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 6.3246ms
+2023-12-11 23:00:54.041 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:54.042 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 13.6581ms
+2023-12-11 23:00:54.663 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 23:00:54.663 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:54.664 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.6358ms
+2023-12-11 23:00:54.668 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 23:00:54.669 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:54.670 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:54.670 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 23:00:54.672 +01:00 [INF] Readers retrieved
+2023-12-11 23:00:54.675 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 23:00:54.678 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:54.680 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 7.5108ms
+2023-12-11 23:00:54.681 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:54.683 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 14.9214ms
+2023-12-11 23:00:55.669 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 23:00:55.670 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:55.671 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 2.3248ms
+2023-12-11 23:00:55.678 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 23:00:55.678 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:55.679 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:55.680 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 23:00:55.682 +01:00 [INF] Books retrieved
+2023-12-11 23:00:55.684 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 23:00:55.687 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:55.688 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 6.1834ms
+2023-12-11 23:00:55.689 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:55.691 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 13.5609ms
+2023-12-11 23:00:55.696 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:55.697 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:55.697 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.6632ms
+2023-12-11 23:00:55.701 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:55.702 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:55.703 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:55.704 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:55.705 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:55.707 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:55.709 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:55.711 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 5.5272ms
+2023-12-11 23:00:55.712 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:55.713 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 11.6194ms
+2023-12-11 23:00:57.121 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:57.122 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:57.122 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.7356ms
+2023-12-11 23:00:57.127 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:57.127 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:57.128 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:57.129 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:57.131 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:57.133 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:57.135 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:57.136 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 5.3246ms
+2023-12-11 23:00:57.137 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:57.139 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 12.2707ms
+2023-12-11 23:00:57.731 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 23:00:57.732 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:57.732 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 1.6238ms
+2023-12-11 23:00:57.739 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 23:00:57.739 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:57.740 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:57.741 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 23:00:57.743 +01:00 [INF] Books retrieved
+2023-12-11 23:00:57.745 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 23:00:57.748 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:57.749 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 6.2346ms
+2023-12-11 23:00:57.750 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:00:57.751 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 12.6800ms
+2023-12-11 23:00:57.755 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 23:00:57.756 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:57.756 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.6738ms
+2023-12-11 23:00:57.759 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 23:00:57.760 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:57.761 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:57.762 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 23:00:57.764 +01:00 [INF] Readers retrieved
+2023-12-11 23:00:57.767 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 23:00:57.770 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:57.772 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 7.4512ms
+2023-12-11 23:00:57.772 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:00:57.773 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 14.0403ms
+2023-12-11 23:00:57.777 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:00:57.777 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:57.778 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.3769ms
+2023-12-11 23:00:57.781 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:00:57.782 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:00:57.783 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:57.784 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:00:57.785 +01:00 [INF] Loans retrieved
+2023-12-11 23:00:57.787 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:00:57.790 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:00:57.791 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 6.0766ms
+2023-12-11 23:00:57.792 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:00:57.793 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 12.2424ms
+2023-12-11 23:01:19.148 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5076/Loans - -
+2023-12-11 23:01:19.149 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:19.151 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5076/Loans - - - 204 - - 2.9609ms
+2023-12-11 23:01:19.153 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5076/Loans application/json;+charset=utf-8 107
+2023-12-11 23:01:19.153 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:19.154 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5076/Loans application/json;+charset=utf-8 107 - 307 0 - 1.5108ms
+2023-12-11 23:01:19.160 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7278/Loans - -
+2023-12-11 23:01:19.160 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:19.161 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7278/Loans - - - 204 - - 1.4929ms
+2023-12-11 23:01:19.163 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7278/Loans application/json;+charset=utf-8 107
+2023-12-11 23:01:19.164 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:19.164 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.AddLoan (konyvtar)'
+2023-12-11 23:01:19.168 +01:00 [INF] Route matched with {action = "AddLoan", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddLoan(LoanDTO) on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:01:19.230 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+WHERE [l].[Id] = @__p_0
+2023-12-11 23:01:19.234 +01:00 [INF] Loan retrieved. Loan: null
+2023-12-11 23:01:19.241 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:01:19.244 +01:00 [INF] Book retrieved. Book: {"LazyLoader":{"$type":"LazyLoader"},"Id":12,"Title":"To Kill a Mockingbird","Author":"Harper Lee","Publisher":"J.B. Lippincott & Co.","PublicationYear":1960,"$type":"BookProxy"}
+2023-12-11 23:01:19.254 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:01:19.256 +01:00 [INF] Reader retrieved. Reader: {"LazyLoader":{"$type":"LazyLoader"},"Id":7,"Name":"Oliver Bennett","Address":"123 Maple Street, Suite 456, Cityville, State 12345","BirthDate":"1952-05-15T00:00:00.0000000","$type":"ReaderProxy"}
+2023-12-11 23:01:19.289 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Loans] ([BookId], [BorrowDate], [ReaderId], [ReturnDeadline])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2023-12-11 23:01:19.301 +01:00 [INF] Loan added. Loan: {"Id":25,"ReaderId":7,"BookId":12,"BorrowDate":"2023-12-14T00:00:00.0000000","ReturnDeadline":"2023-12-15T00:00:00.0000000","Reader":{"LazyLoader":{"$type":"LazyLoader"},"Id":7,"Name":"Oliver Bennett","Address":"123 Maple Street, Suite 456, Cityville, State 12345","BirthDate":"1952-05-15T00:00:00.0000000","$type":"ReaderProxy"},"Book":{"LazyLoader":{"$type":"LazyLoader"},"Id":12,"Title":"To Kill a Mockingbird","Author":"Harper Lee","Publisher":"J.B. Lippincott & Co.","PublicationYear":1960,"$type":"BookProxy"},"$type":"Loan"}
+2023-12-11 23:01:19.319 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-12-11 23:01:19.320 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.AddLoan (konyvtar) in 148.2192ms
+2023-12-11 23:01:19.321 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.AddLoan (konyvtar)'
+2023-12-11 23:01:19.322 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7278/Loans application/json;+charset=utf-8 107 - 200 0 - 159.1886ms
+2023-12-11 23:01:19.336 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:01:19.337 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:19.338 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.1930ms
+2023-12-11 23:01:19.341 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:01:19.342 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:19.342 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:01:19.344 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:01:19.346 +01:00 [INF] Loans retrieved
+2023-12-11 23:01:19.348 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:01:19.350 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:01:19.353 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:01:19.356 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:01:19.359 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 13.0869ms
+2023-12-11 23:01:19.360 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:01:19.361 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 19.9122ms
+2023-12-11 23:01:23.574 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 23:01:23.575 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:23.575 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.4049ms
+2023-12-11 23:01:23.581 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 23:01:23.582 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:23.582 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:01:23.584 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 23:01:23.586 +01:00 [INF] Readers retrieved
+2023-12-11 23:01:23.588 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 23:01:23.591 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:01:23.593 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 6.7396ms
+2023-12-11 23:01:23.594 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:01:23.595 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 14.3452ms
+2023-12-11 23:01:24.005 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 23:01:24.007 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:24.008 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 2.8220ms
+2023-12-11 23:01:24.011 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 23:01:24.012 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:24.013 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:01:24.014 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 23:01:24.016 +01:00 [INF] Books retrieved
+2023-12-11 23:01:24.018 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 23:01:24.020 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:01:24.022 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 6.1048ms
+2023-12-11 23:01:24.023 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:01:24.024 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 12.2130ms
+2023-12-11 23:01:24.027 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:01:24.028 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:24.029 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.0069ms
+2023-12-11 23:01:24.032 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:01:24.033 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:01:24.034 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:01:24.035 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:01:24.037 +01:00 [INF] Loans retrieved
+2023-12-11 23:01:24.039 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:01:24.042 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:01:24.044 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:01:24.047 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:01:24.050 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 13.0878ms
+2023-12-11 23:01:24.051 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:01:24.052 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 19.3883ms
+2023-12-11 23:06:08.152 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 23:06:08.154 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:08.156 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 6.8516ms
+2023-12-11 23:06:08.187 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 23:06:08.193 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:08.194 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:06:08.195 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 23:06:08.197 +01:00 [INF] Readers retrieved
+2023-12-11 23:06:08.198 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 23:06:08.201 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:06:08.202 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 6.0109ms
+2023-12-11 23:06:08.203 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:06:08.205 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 18.1074ms
+2023-12-11 23:06:09.437 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:06:09.438 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:09.439 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 2.0006ms
+2023-12-11 23:06:09.442 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:06:09.443 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:09.444 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:06:09.445 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:06:09.447 +01:00 [INF] Loans retrieved
+2023-12-11 23:06:09.450 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:06:09.452 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:06:09.454 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:06:09.457 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:06:09.460 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 12.6044ms
+2023-12-11 23:06:09.461 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:06:09.462 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 19.9984ms
+2023-12-11 23:06:10.623 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 23:06:10.624 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:10.625 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.6827ms
+2023-12-11 23:06:10.627 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 23:06:10.628 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:10.629 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:06:10.630 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 23:06:10.632 +01:00 [INF] Readers retrieved
+2023-12-11 23:06:10.634 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 23:06:10.636 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:06:10.638 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 5.617ms
+2023-12-11 23:06:10.639 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:06:10.640 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 12.7948ms
+2023-12-11 23:06:13.691 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:06:13.692 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:13.692 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.4961ms
+2023-12-11 23:06:13.696 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:06:13.697 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:13.698 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:06:13.699 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:06:13.701 +01:00 [INF] Loans retrieved
+2023-12-11 23:06:13.702 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:06:13.705 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:06:13.707 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:06:13.711 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:06:13.713 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 12.6639ms
+2023-12-11 23:06:13.714 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:06:13.716 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 19.3453ms
+2023-12-11 23:06:14.198 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Books - -
+2023-12-11 23:06:14.199 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:14.200 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Books - - - 307 0 - 1.4940ms
+2023-12-11 23:06:14.204 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Books - -
+2023-12-11 23:06:14.205 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:14.206 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:06:14.207 +01:00 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Book]]] GetBooks() on controller konyvtar.Controllers.BooksController (konyvtar).
+2023-12-11 23:06:14.208 +01:00 [INF] Books retrieved
+2023-12-11 23:06:14.211 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+2023-12-11 23:06:14.213 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Book, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:06:14.214 +01:00 [INF] Executed action konyvtar.Controllers.BooksController.GetBooks (konyvtar) in 5.9623ms
+2023-12-11 23:06:14.215 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.BooksController.GetBooks (konyvtar)'
+2023-12-11 23:06:14.217 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Books - - - 200 - application/json;+charset=utf-8 12.4616ms
+2023-12-11 23:06:14.220 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Readers - -
+2023-12-11 23:06:14.221 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:14.221 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Readers - - - 307 0 - 1.3176ms
+2023-12-11 23:06:14.225 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Readers - -
+2023-12-11 23:06:14.226 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:14.227 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:06:14.228 +01:00 [INF] Route matched with {action = "GetReaders", controller = "Readers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Reader]]] GetReaders() on controller konyvtar.Controllers.ReadersController (konyvtar).
+2023-12-11 23:06:14.230 +01:00 [INF] Readers retrieved
+2023-12-11 23:06:14.232 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+2023-12-11 23:06:14.234 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Reader, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:06:14.235 +01:00 [INF] Executed action konyvtar.Controllers.ReadersController.GetReaders (konyvtar) in 5.3644ms
+2023-12-11 23:06:14.237 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.ReadersController.GetReaders (konyvtar)'
+2023-12-11 23:06:14.238 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Readers - - - 200 - application/json;+charset=utf-8 12.9989ms
+2023-12-11 23:06:14.241 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Loans - -
+2023-12-11 23:06:14.242 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:14.242 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Loans - - - 307 0 - 1.2992ms
+2023-12-11 23:06:14.246 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7278/Loans - -
+2023-12-11 23:06:14.247 +01:00 [INF] CORS policy execution successful.
+2023-12-11 23:06:14.248 +01:00 [INF] Executing endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:06:14.249 +01:00 [INF] Route matched with {action = "GetLoans", controller = "Loans"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[konyvtar.Contracts.Loan]]] GetLoans() on controller konyvtar.Controllers.LoansController (konyvtar).
+2023-12-11 23:06:14.250 +01:00 [INF] Loans retrieved
+2023-12-11 23:06:14.252 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[BookId], [l].[BorrowDate], [l].[ReaderId], [l].[ReturnDeadline]
+FROM [Loans] AS [l]
+2023-12-11 23:06:14.254 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[konyvtar.Contracts.Loan, konyvtar.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-11 23:06:14.256 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Address], [r].[BirthDate], [r].[Name]
+FROM [Readers] AS [r]
+WHERE [r].[Id] = @__p_0
+2023-12-11 23:06:14.260 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[Author], [b].[PublicationYear], [b].[Publisher], [b].[Title]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2023-12-11 23:06:14.262 +01:00 [INF] Executed action konyvtar.Controllers.LoansController.GetLoans (konyvtar) in 11.6709ms
+2023-12-11 23:06:14.263 +01:00 [INF] Executed endpoint 'konyvtar.Controllers.LoansController.GetLoans (konyvtar)'
+2023-12-11 23:06:14.264 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7278/Loans - - - 200 - application/json;+charset=utf-8 18.0931ms
