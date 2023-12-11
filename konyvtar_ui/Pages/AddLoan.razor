@@ -10,13 +10,15 @@
 
 @code {
     private LoanDTO Loan { get; set; } = new();
-    private IEnumerable<Book> Books { get; set; }
-    private IEnumerable<Reader> Readers { get; set; }
+    private IEnumerable<Book> Books { get; set; } = new List<Book>();
+    private IEnumerable<Reader> Readers { get; set; } = new List<Reader>();
+    private IEnumerable<Loan> Loans { get; set; } = new List<Loan>();
 
     protected override async Task OnInitializedAsync()
     {
         Books = await BookService.GetBooksAsync();
         Readers = await ReaderService.GetReadersAsync();
+        Loans = await Loanservice.GetLoansAsync();
     }
 
     private async Task AddLoanToDb()

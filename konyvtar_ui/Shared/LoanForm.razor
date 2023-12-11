@@ -5,15 +5,18 @@
     <div class="mb-3">
         <label class="form-label">Book</label>
         <select @bind="Loan.BookId" class="form-control">
+            <option value="">Select a book</option>
             @foreach (var book in Books)
             {
                 <option value="@book.Id">@book.Title</option>
             }
         </select>
     </div>
+
     <div class="mb-3">
         <label class="form-label">Reader</label>
         <select @bind="Loan.ReaderId" class="form-control">
+            <option value="">Select a reader</option>
             @foreach (var reader in Readers)
             {
                 <option value="@reader.Id">@reader.Name</option>
@@ -43,6 +46,9 @@
     public LoanDTO Loan { get; set; }
 
     [Parameter]
+    public IEnumerable<Loan> Loans { get; set; }
+
+    [Parameter]
     public string ButtonTitle { get; set; }
 
     [Parameter]
@@ -66,5 +72,17 @@
     private string FormatDate(DateTime date)
     {
         return date.ToString("yyyy-MM-dd");
+    }
+
+    private bool IsBookInLoan(int bookId)
+    {
+        foreach (var loan in Loans)
+        {
+            if (loan.Book.Id == bookId)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
