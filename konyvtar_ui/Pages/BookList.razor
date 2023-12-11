@@ -1,6 +1,7 @@
 ﻿@page "/booklist"
 @inject IBookService BookService
 @inject NavigationManager Navigation
+@inject ILoanService LoanService
 
 @if (Book is not null)
 {
@@ -17,8 +18,10 @@
         <tbody>
             @foreach (var book in Book)
             {
-                <tr>
-                    <td>@book.Title</td>
+                if (!IsBookInLoan(book.Id))
+                {
+                    <tr>
+                        <td>@book.Title</td>
                     <td>@book.Author</td>
                     <td>@book.Publisher</td>
                     <td>@book.PublicationYear</td>
@@ -26,6 +29,7 @@
                         <a href="bookdetails/@book.Id">Details</a>
                     </td>
                 </tr>
+                }
             }
         </tbody>
     </table>
@@ -33,14 +37,27 @@
 
 @code {
     private IEnumerable<Book>? Book { get; set; }
+    private IEnumerable<Loan>? Loan { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         Book = await BookService.GetBooksAsync();
+        Loan = await LoanService.GetLoansAsync();
     }
 
     private void NavigateToAddBook()
     {
         Navigation.NavigateTo("/AddBook");
+    }
+    private bool IsBookInLoan(int bookId)
+    {
+        foreach (var loan in Loan)
+        {
+            if (loan.Book.Id == bookId)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
